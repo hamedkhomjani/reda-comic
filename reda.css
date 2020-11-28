@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+:root {
+    --size-divisor: 3;
+}
+
+body {
+    height: 100%;
+    background-color: #2E2E2E;
+    background-repeat: no-repeat;
+    background-image: url(/reda/bubble/redacomic2.png);
+    background-size: 56%;
+    position: relative;
+    background-position: center center;
+}
+
+.holepice {}
+
+.js {
+    position: absolute;
+    height: 210px;
+    left: 21%;
+    top: 3%;
+    animation: appear 1s 2s backwards;
+    transform-origin: bottom right;
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.jamstack {
+    position: absolute;
+    height: 170px;
+    left: 50%;
+    top: 3%;
+    animation: appear 1s 5s backwards;
+    transform-origin: bottom left;
+}
+
+.htmlcss {
+    position: absolute;
+    height: 205px;
+    left: 18%;
+    top: 35%;
+    animation: appear 1s 4s backwards;
+    transform-origin: center right;
+}
+
+.git {
+    position: absolute;
+    height: 205px;
+    left: 57%;
+    top: 25%;
+    animation: appear 1s 3s backwards;
+    transform-origin: center left;
+}
+
+.hobbit {
+    position: absolute;
+    height: 205px;
+    left: 25%;
+    top: 65%;
+    animation: appear 1s 7.5s backwards;
+    transform-origin: top right;
+}
+
+.agile {
+    position: absolute;
+    height: 290px;
+    left: 55%;
+    top: 54%;
+    animation: appear 1s 6.3s backwards;
+    transform-origin: top left;
+}
+
+.tanx {
+    width: 300px;
+    position: relative;
+    left: 55%;
+    top: 92%;
+    animation: appear 1.5s 9s backwards;
+    transform-origin: center;
+}
+
+@media (min-width: 576px) {
+     :root {
+        --size-divisor: 2;
+    }
+}
+
+@media (min-width: 768px) {
+     :root {
+        --size-divisor: 1.5;
+    }
+}
+
+@media (min-width: 992px) {
+     :root {
+        --size-divisor: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+     :root {
+        --size-divisor: .67;
+    }
+}
