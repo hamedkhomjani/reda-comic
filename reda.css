@@ -26,12 +26,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    body {
-        background-size: 30%;
-        position: absolute;
-    }
-}
+@media (max-width: 600px) {}
 
 .js {
     position: absolute;
