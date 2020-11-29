@@ -7,10 +7,6 @@ html {
     height: 100%;
 }
 
-:root {
-    --size-divisor: 3;
-}
-
 body {
     height: 100%;
     background-color: #2E2E2E;
@@ -21,7 +17,21 @@ body {
     background-position: center center;
 }
 
-.holepice {}
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: 30%;
+        position: absolute;
+    }
+}
 
 .js {
     position: absolute;
@@ -30,15 +40,6 @@ body {
     top: 3%;
     animation: appear 1s 2s backwards;
     transform-origin: bottom right;
-}
-
-@keyframes appear {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
 }
 
 .jamstack {
@@ -93,28 +94,4 @@ body {
     top: 92%;
     animation: appear 1.5s 9s backwards;
     transform-origin: center;
-}
-
-@media (min-width: 576px) {
-     :root {
-        --size-divisor: 2;
-    }
-}
-
-@media (min-width: 768px) {
-     :root {
-        --size-divisor: 1.5;
-    }
-}
-
-@media (min-width: 992px) {
-     :root {
-        --size-divisor: 1;
-    }
-}
-
-@media (min-width: 1200px) {
-     :root {
-        --size-divisor: .67;
-    }
 }
